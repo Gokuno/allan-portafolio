@@ -7,25 +7,25 @@ const services = [
   {
     num:'1',
     title: 'Desarrollo Web',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem aliquam, dictum nisi vel, semper mi. Praesent quis blandit sapien. Maecenas sit amet nulla eget diam vehicula venenatis a quis eros. ',
+    description: 'El desarrollo web es el proceso de crear y mantener sitios web y aplicaciones en línea que no solo sean visualmente atractivos, sino también altamente funcionales y seguros. Un desarrollador web puede construir desde simples páginas informativas hasta complejas plataformas de comercio electrónico, asegurándose de que el sitio sea rápido, responsivo y fácil de navegar en cualquier dispositivo. Al contar con un sitio web profesional, su negocio puede alcanzar una audiencia más amplia, mejorar la interacción con los clientes y aumentar la credibilidad y visibilidad en el mercado digital.',
     href: '',
   },
   {
     num:'2',
     title: 'Diseñador UI/UX',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem aliquam, dictum nisi vel, semper mi. Praesent quis blandit sapien. Maecenas sit amet nulla eget diam vehicula venenatis a quis eros. ',
+    description: 'Un diseñador UI/UX se enfoca en crear experiencias de usuario excepcionales y diseños de interfaz que no solo sean estéticamente agradables, sino también intuitivos y funcionales. Mediante una comprensión profunda del comportamiento del usuario y las mejores prácticas de diseño, un diseñador UI/UX puede optimizar la interacción de los clientes con su producto o servicio. Esto no solo mejora la satisfacción del usuario, sino que también puede aumentar las conversiones y la lealtad del cliente, impulsando así el éxito de su negocio.',
     href: '',
   },
   {
     num:'3',
     title: 'Diseñador de Logos',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem aliquam, dictum nisi vel, semper mi. Praesent quis blandit sapien. Maecenas sit amet nulla eget diam vehicula venenatis a quis eros. ',
+    description: 'Un diseñador de logos crea identidades visuales únicas y memorables que capturan la esencia y los valores de su marca. Un logo bien diseñado es fundamental para el reconocimiento y la coherencia de la marca, ayudando a diferenciar su negocio en un mercado competitivo. Un logo efectivo transmite profesionalismo y confianza, dejando una impresión duradera en sus clientes y estableciendo una base sólida para toda su estrategia de branding.',
     href: '',
   },
   {
     num:'4',
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem aliquam, dictum nisi vel, semper mi. Praesent quis blandit sapien. Maecenas sit amet nulla eget diam vehicula venenatis a quis eros. ',
+    description: 'La optimización para motores de búsqueda (SEO) es una estrategia crucial para mejorar la visibilidad de su sitio web en los resultados de búsqueda orgánica. Mediante técnicas de SEO, su negocio puede atraer más tráfico cualificado, aumentar las oportunidades de conversión y, en última instancia, generar más ingresos. Un buen especialista en SEO se asegura de que su sitio web cumpla con las mejores prácticas y se mantenga actualizado con los algoritmos de búsqueda, ayudándole a mantenerse por delante de la competencia y a alcanzar sus objetivos comerciales en el entorno digital.',
     href: '',
   },
 ];

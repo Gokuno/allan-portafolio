@@ -1,8 +1,9 @@
 "use client"
-
+import { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import emailjs from '@emailjs/browser';
 
 import {
   Select,
@@ -15,6 +16,7 @@ import {
 } from "@/components/ui/select";
 
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from "react-icons/fa";
+
 
 const info = [
   {
@@ -40,6 +42,27 @@ const info = [
 import { motion } from "framer-motion";
 
 const Contact = () => {
+  const form = useRef();
+  const [successMessage, setSuccessMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_m4i9s0a', 'template_yfnchmc', form.current, {
+        publicKey: 'dlAo230zbPdXgTCbL',
+      })
+      .then(
+        () => {
+          setSuccessMessage("El formulario fue enviado con éxito");
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+  
   return (
    <motion.section 
    initial={{opacity:0}}
@@ -53,40 +76,31 @@ const Contact = () => {
       <div className="flex flex-col xl:flex-row gap-[30px]">
         {/*form*/}
         <div className="xl:w-[54%] order-2 xl:order-none">
-          <form className="flex flex-col gap-6 p-10 bg-[#232326] rounded-xl">
+          <form className="flex flex-col gap-6 p-10 bg-[#232326] rounded-xl" ref={form} onSubmit={sendEmail}>
             <h3 className="text-4xl text-accent">Trabajemos juntos</h3>
             <p className="text-white/60">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ut sem aliquam, dictum nisi vel, semper mi. Praesent quis blandit sapien. Maecenas sit amet nulla eget diam vehicula venenatis a quis eros.
+              Tienes algun proyecto que quieres hechar andar, te puedo ayudar, trabajemos juntos para concretar tu proyecto personal o de negocios.
             </p>
             {/*input*/}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Input type="firstname" placeholder="Nombre" />
-              <Input type="lastname" placeholder="Apellido" />
-              <Input type="email" placeholder="Correo Electronico" />
-              <Input type="phone" placeholder="Telefono" />
+              <Input type="firstname" placeholder="Nombre" name="firstname" />
+              <Input type="lastname" placeholder="Apellido" name='lastname'/>
+              <Input type="email" placeholder="Correo Electronico" name='email'/>
+              <Input type="phone" placeholder="Telefono" name='phone'/>
             </div>
-            {/*select*/}
-            <Select>
-              <SelectTrigger className="w-full">
-                <SelectValue placeholder="Selecciona un servicio" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectGroup>
-                  <SelectLabel>Selecciona un servicio</SelectLabel>
-                  <SelectItem value="est">Desarrollo Web</SelectItem>
-                  <SelectItem value="cst">UI/UX Design</SelectItem>
-                  <SelectItem value="mst">Diseño de Logo</SelectItem>
-                  <SelectItem value="sst">SEO</SelectItem>
-                </SelectGroup>
-              </SelectContent>
-            </Select>
             {/*textarea*/}
             <Textarea 
               className="h-[200px]" 
               placeholder="Escribe tu mensaje o comentario."
+              name="message"
             />
             <Button size="md" className="max-w-40">Enviar</Button>
           </form>
+          {successMessage && (
+            <div className="mt-4 p-4 bg-green-500 text-white rounded">
+              {successMessage}
+            </div>
+          )}
         </div>
         {/*info*/}
         <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
@@ -116,4 +130,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;

@@ -66,7 +66,7 @@ const projects = [
   {
     num: "4",
     category: 'frontend',
-    title: 'Portafolio con graficos 3D',
+    title: 'Portafolio con graficos 3D(No compatible con mobile)',
     description: 'Portafolio con graficos 3D dinamico. Este portafolio se creo con React, ThreeJs, React Three Fiber y Framer Motion. Tambien emplementa el mandar correo electronico de confirmacion en el formulario de contacto.',
     stack: [
      
@@ -78,6 +78,22 @@ const projects = [
     image: "/assets/work/portafolio3d.png",
     live: 'http://portafolio.1upwebdesigns.com/',
     github: 'https://github.com/Gokuno/3d-portafolio',
+  },
+  {
+    num: "5",
+    category: 'frontend',
+    title: 'Agencia 1UP Web Designs',
+    description: 'Agencia de servicios web, creada en Wordpress, Elementor y Javascript.',
+    stack: [
+     
+      {name: 'Wordpress'},
+      {name: 'Elementor'},
+      {name: 'Javascript'},
+      
+    ],
+    image: "/assets/work/1upwebdesigns.png",
+    live: 'https://1upwebdesigns.com/',
+    github: 'https://github.com/Gokuno/',
   },
 ];
 
@@ -106,7 +122,7 @@ const Work = () => {
               </div>
               {/*project category*/}
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-200 capitalize">
-                {project.category}
+                {project.title}
               </h2>
               {/*project description*/}
               <p className="text-white/60">{project.description}</p>
