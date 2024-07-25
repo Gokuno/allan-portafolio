@@ -190,7 +190,7 @@ const Resume = () => {
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-10">
       <Tabs
         defaultValue="experience"
         className="flex flex-col xl:flex-row gap-[60px]"
@@ -204,7 +204,7 @@ const Resume = () => {
         </TabsList>
 
         {/*content*/}
-        <div>
+        <div className="min-h-[70vh] w-full">
           {/*experience*/}
           <TabsContent value="experience" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -250,7 +250,7 @@ const Resume = () => {
                         <div className="flex items-center gap-3">
                           {/*dot*/}
                           <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                          <p className="text-white/60">{items.institution}</p>
+                          <p className="text-white/60 text-sm">{items.institution}</p>
                         </div>
                       </li>
                     )
