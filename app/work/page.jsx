@@ -141,7 +141,7 @@ const Work = () => {
               {/*border*/}
               <div className="border border-white/20"></div>
               {/*butttons*/}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mb-15">
                 {/*live proyect button*/}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
