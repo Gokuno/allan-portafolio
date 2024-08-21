@@ -24,7 +24,7 @@ const projects = [
     num: "1",
     category: 'frontend',
     title: 'Nasa React Web App',
-    description: 'Application web creada con React.js, Tailwind.css y con API de la NASA. Muestra la "Foto Astronimica del Dia" actual que sube la NASA en su portal web.',
+    description: 'Application web creada con React.js, Tailwind.css y con API de la NASA. Muestra la "Foto Astronomica del Dia" actual que sube la NASA en su portal web.',
     stack: [
       { name: 'Javascript' },
       { name: 'React.js' },
