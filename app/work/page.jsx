@@ -140,7 +140,7 @@ const Work = () => {
               <div className="w-full md:w-1/2 flex flex-col justify-between">
                 <div>
                   <div className="text-8xl leading-none font-bold text-outline text-transparent mb-5">
-                    {project.num}
+                    { /* {project.num}*/}
                   </div>
                   <h2 className="text-[32px] font-bold leading-none text-white group-hover:text-accent transition-all duration-200 capitalize mb-5">
                     {project.title}
