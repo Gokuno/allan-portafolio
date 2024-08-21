@@ -26,9 +26,9 @@ const projects = [
     title: 'Nasa React Web App',
     description: 'Application web creada con React.js, Tailwind.css y con API de la NASA. Muestra la "Foto Astronimica del Dia" actual que sube la NASA en su portal web.',
     stack: [
-      {name: 'Javascript'},
-      {name: 'React.js'},
-      {name: 'Tailwind.css'},
+      { name: 'Javascript' },
+      { name: 'React.js' },
+      { name: 'Tailwind.css' },
     ],
     image: "/assets/work/nasaapp.png",
     live: 'https://nasa-apod-reacjs-app.netlify.app/',
@@ -40,10 +40,10 @@ const projects = [
     title: 'FitnessHelper',
     description: 'Aplicacion de entrenamiento gym creada con React.js y Tailwind.css. Esta aplicacion te permite seleccionar el tipo de entrenamiento, zona muscular y el objectivo que se desea obtener, en base a tus selecciones te da los mejores entrenamientos y la cantidad de sets. Tambien cuenta con su contador de sets manual.',
     stack: [
-      {name: 'Html 5'},
-      {name: 'Css 3'},
-      {name: 'React.js'},
-      {name: 'Tailwind.css'},
+      { name: 'Html 5' },
+      { name: 'Css 3' },
+      { name: 'React.js' },
+      { name: 'Tailwind.css' },
     ],
     image: "/assets/work/gymapp.png",
     live: 'https://appdegym.netlify.app/',
@@ -51,45 +51,61 @@ const projects = [
   },
   {
     num: "3",
+    category: 'fullstack',
+    title: 'Clon de Airbnb',
+    description: 'Aplicacion web fullstack clon de Airbnb, esta aplicacion fue creada usando tecnologias de desarrollo web como, Next.js 14, React, Tailwind, Prisma, MongoDB y NextAuth.',
+    stack: [
+      { name: 'Next.js' },
+      { name: 'Typescript' },
+      { name: 'React.js' },
+      { name: 'Prisma' },
+      { name: 'MongoDB' },
+    ],
+    image: "/assets/work/airbnb-clon.png",
+    live: 'https://airbnb-clone-bay-one.vercel.app/',
+    github: 'https://github.com/Gokuno/airbnb-clone',
+  },
+  {
+    num: "4",
     category: 'frontend',
     title: 'TalkScribe',
     description: 'Applicacion web en React que te permite transcribir y traducir grabaciones o audios. Esta applicacion usas "web workers" para correr models Machine Learning en el motor de busqueda.',
     stack: [
-      {name: 'Javascript'},
-      {name: 'React.js'},
-      {name: 'Tailwind.css'},
+      { name: 'Javascript' },
+      { name: 'React.js' },
+      { name: 'Tailwind.css' },
     ],
     image: "/assets/work/talkscribe.png",
     live: 'https://talkscribe.netlify.app/',
     github: 'https://github.com/Gokuno/machinelearning-app',
   },
   {
-    num: "4",
+    num: "5",
     category: 'frontend',
     title: 'Portafolio con graficos 3D(No compatible con mobile)',
     description: 'Portafolio con graficos 3D dinamico. Este portafolio se creo con React, ThreeJs, React Three Fiber y Framer Motion. Tambien emplementa el mandar correo electronico de confirmacion en el formulario de contacto.',
     stack: [
-     
-      {name: 'React.js'},
-      {name: 'Three.js'},
-      {name: 'React Three Fiber'},
-      {name: 'Framer-Motion'},
+
+      { name: 'React.js' },
+      { name: 'Three.js' },
+      { name: 'React Three Fiber' },
+      { name: 'Framer-Motion' },
     ],
     image: "/assets/work/portafolio3d.png",
     live: 'http://portafolio.1upwebdesigns.com/',
     github: 'https://github.com/Gokuno/3d-portafolio',
   },
   {
-    num: "5",
+    num: "6",
     category: 'frontend',
     title: 'Agencia 1UP Web Designs',
     description: 'Agencia de servicios web, creada en Wordpress, Elementor y Javascript.',
     stack: [
-     
-      {name: 'Wordpress'},
-      {name: 'Elementor'},
-      {name: 'Javascript'},
-      
+
+      { name: 'Wordpress' },
+      { name: 'Elementor' },
+      { name: 'Javascript' },
+
     ],
     image: "/assets/work/1upwebdesigns.png",
     live: 'https://1upwebdesigns.com/',
@@ -108,8 +124,8 @@ const Work = () => {
   }
   return (
     <motion.section
-      initial={{opacity:0}}
-      animate={{opacity: 1, transition: {delay: 2.4, duration: 0.4, ease: "easeIn" }}}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0"
     >
       <div className="container mx-auto">
@@ -133,7 +149,7 @@ const Work = () => {
                     <li key={index} className="text-xl text-accent">
                       {item.name}
                       {/*remove the last comma*/}
-                      {index !==project.stack.length - 1&& ","}
+                      {index !== project.stack.length - 1 && ","}
                     </li>
                   )
                 })}
@@ -141,7 +157,7 @@ const Work = () => {
               {/*border*/}
               <div className="border border-white/20"></div>
               {/*butttons*/}
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 mb-15">
                 {/*live proyect button*/}
                 <Link href={project.live}>
                   <TooltipProvider delayDuration={100}>
@@ -172,10 +188,10 @@ const Work = () => {
             </div>
           </div>
           <div className="w-full xl:w-[50%]">
-            <Swiper 
+            <Swiper
               spaceBetween={30}
               slidesPerView={1}
-              className="xl:h-[520px] mb-12" 
+              className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
             >
               {projects.map((project, index) => {
@@ -193,7 +209,7 @@ const Work = () => {
                 )
               })}
               {/* slider buttons */}
-              <WorkSliderBtns 
+              <WorkSliderBtns
                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                 btnStyles="bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
               />
