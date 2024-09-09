@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub, } from "react-icons/bs";
+import { BsArrowUpRight, BsGithub, BsPlayCircleFill } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -161,7 +161,7 @@ const Work = () => {
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
+                          <BsPlayCircleFill className="text-white text-3xl group-hover:text-accent" />
                         </TooltipTrigger>
                         <TooltipContent>
                           <p>Proyecto en Vivo</p>
