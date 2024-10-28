@@ -20,7 +20,7 @@ const Home = () => {
                             <span className="text-accent">Allan Paz</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            Me especializo en elaborar experiencias digitales elegantes y soy proeficiente con varios lenguajes de programacion y tecnologias.
+                            Soy ingeniero especializado en el desarrollo de sitios, aplicaciones web y programacion.
                         </p>
                         {/*btn and socials*/}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
