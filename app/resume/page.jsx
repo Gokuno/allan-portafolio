@@ -41,7 +41,7 @@ const about = {
 const experience = {
   icon: "",
   title: 'Mi Experiencia',
-  description: 'Cuento con mas de 13 años de experiencia laboral en el desarrollo, diseño y programacion de sitio y aplicaciones web.',
+  description: 'Cuento con mas de 10 años de experiencia laboral en el desarrollo, diseño y programacion de sitio y aplicaciones web.',
   items: [
     {
       company: "1UP Web Designs",
@@ -177,10 +177,10 @@ const Resume = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{
-        opacity: 1, 
+        opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0 "
     >
       <div className="container mx-auto mb-10">
         <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
@@ -203,9 +203,9 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((items, index) => {
                       return (
-                        <li 
+                        <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] rounded-lg border border-white/20 h-[184px] py-6 px-10 flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{items.duration}</span>
                           <h3 className="text-xl max-w-[300px] min-h-[60px] text-center lg:text-left">{items.position}</h3>
@@ -230,9 +230,9 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {education.items.map((items, index) => {
                       return (
-                        <li 
+                        <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] border border-white/20 h-[184px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{items.duration}</span>
                           <h3 className="text-xl max-w-[300px] min-h-[60px] text-center lg:text-left">{items.degree}</h3>
@@ -257,20 +257,20 @@ const Resume = () => {
                   <ul className="grid grid-cols-1 gap-[30px]">
                     {certificates.items.map((items, index) => {
                       return (
-                        <li 
+                        <li
                           key={index}
-                          className="bg-[#232329] h-[260px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] border border-white/20 h-[260px] py-6 px-10 rounded-lg flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{items.institution}</span>
                           <h3 className="text-xl max-w-[350px] min-h-[40px] text-center lg:text-left">{items.certificate}</h3>
                           <div className="flex justify-center items-start h-[200px] w-[200px] mx-auto">
                             {items.image && (
-                              <Image 
-                                src={items.image} 
-                                width={200} 
-                                height={200} 
-                                className="object-cover" 
-                                alt={`${items.certificate} image`} 
+                              <Image
+                                src={items.image}
+                                width={200}
+                                height={200}
+                                className="object-cover"
+                                alt={`${items.certificate} image`}
                               />
                             )}
                           </div>
@@ -294,7 +294,7 @@ const Resume = () => {
                       <li key={index}>
                         <TooltipProvider delayDuration={100}>
                           <Tooltip>
-                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                            <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-lg border border-white/20 flex justify-center items-center group">
                               <div className="text-6xl group-hover:text-accent transition-all duration-200">{skill.icon}</div>
                             </TooltipTrigger>
                             <TooltipContent>
@@ -316,7 +316,7 @@ const Resume = () => {
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                   {about.info.map((item, index) => {
                     return (
-                      <li 
+                      <li
                         key={index}
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
