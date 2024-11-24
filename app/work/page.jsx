@@ -80,6 +80,22 @@ const projects = [
   },
   {
     num: "5",
+    category: 'fullstack',
+    title: 'Movies app',
+    description: 'Applicacion de peliculas frontend en React y backend con Spring boot Java API intergrado con MongoDB.',
+    stack: [
+      { name: 'Javascript' },
+      { name: 'React.js' },
+      { name: 'Spring boot' },
+      { name: 'Java' },
+    ],
+    image: "/assets/work/Movieapp.png",
+    live: 'https://movieappclient.netlify.app/',
+    github: 'https://github.com/Gokuno/movie-app',
+    github: 'https://github.com/Gokuno/movies-api',
+  },
+  {
+    num: "6",
     category: 'frontend',
     title: 'Portafolio con graficos 3D(No compatible con mobile)',
     description: 'Portafolio con graficos 3D dinamico. Este portafolio se creo con React, ThreeJs, React Three Fiber y Framer Motion. Tambien emplementa el mandar correo electronico de confirmacion en el formulario de contacto.',
@@ -94,7 +110,7 @@ const projects = [
     live: 'http://portafolio.1upwebdesigns.com/',
     github: 'https://github.com/Gokuno/3d-portafolio',
   },
-  {
+  /*{
     num: "6",
     category: 'frontend',
     title: 'Agencia 1UP Web Designs',
@@ -109,7 +125,7 @@ const projects = [
     image: "/assets/work/1upwebdesigns.png",
     live: 'https://1upwebdesigns.com/',
     github: 'https://github.com/Gokuno/',
-  },
+  },*/
 ];
 
 const Work = () => {
