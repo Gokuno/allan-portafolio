@@ -94,7 +94,7 @@ const projects = [
     github: 'https://github.com/Gokuno/movie-app',
     github: 'https://github.com/Gokuno/movies-api',
   },
-  {
+ /* {
     num: "6",
     category: 'frontend',
     title: 'Portafolio con graficos 3D(No compatible con mobile)',
@@ -109,7 +109,7 @@ const projects = [
     image: "/assets/work/portafolio3d.png",
     live: 'http://portafolio.1upwebdesigns.com/',
     github: 'https://github.com/Gokuno/3d-portafolio',
-  },
+  }, */
   /*{
     num: "6",
     category: 'frontend',
