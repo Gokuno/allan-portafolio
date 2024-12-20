@@ -97,7 +97,7 @@ const projects = [
     num: "7",
     category: 'fullstack',
     title: 'Team-chat App',
-    description: 'Aplicacion de chat de equipos con conversaciones en tiempo real similar a Slack, con espacios de trabajo, canales de conversaciones, conversaciones 1:1, mensajes reactiones y funcion de miembros.',
+    description: 'Aplicacion fullstack de chat de equipos con conversaciones en tiempo real similar a Slack, con espacios de trabajo, canales de conversaciones, conversaciones 1:1, mensajes reactiones y funcion de miembros.',
     stack: [
 
       { name: 'Next.js' },
