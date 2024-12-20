@@ -163,7 +163,7 @@ const Work = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-white/5 p-6 rounded-lg shadow-lg flex flex-col md:flex-row md:gap-8"
+              className="bg-[#232329] p-6 rounded-lg shadow-lg flex flex-col md:flex-row md:gap-8"
             >
               <div className="w-full md:w-1/2 h-[300px] relative">
                 <Image src={project.image} fill className="object-cover rounded-lg" alt="" />
