@@ -187,7 +187,7 @@ const Work = () => {
                   </ul>
                 </div>
                 <div className="border-t border-white/20 pt-4 mt-4 flex items-center gap-4">
-                  <Link href={project.live}>
+                  <Link href={project.live} rel="noopener noreferrer" target="_blank">
                     {/* Live project button */}
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
@@ -200,7 +200,7 @@ const Work = () => {
                       </Tooltip>
                     </TooltipProvider>
                   </Link>
-                  <Link href={project.github}>
+                  <Link href={project.github} rel="noopener noreferrer" target="_blank">
                     {/* GitHub project button */}
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
