@@ -91,8 +91,23 @@ const projects = [
     ],
     image: "/assets/work/Movieapp.png",
     live: 'https://movieappclient.netlify.app/',
-    github: 'https://github.com/Gokuno/movie-app',
     github: 'https://github.com/Gokuno/movies-api',
+  },
+  {
+    num: "7",
+    category: 'fullstack',
+    title: 'Team-chat App',
+    description: 'Aplicacion de chat de equipos con conversaciones en tiempo real similar a Slack.',
+    stack: [
+
+      { name: 'Next.js' },
+      { name: 'React' },
+      { name: 'Auth.js' },
+      { name: 'Convex' },
+    ],
+    image: "/assets/work/teamchat.png",
+    live: 'https://team-chat-lac.vercel.app/',
+    github: 'https://github.com/Gokuno/',
   },
  /* {
     num: "6",
