@@ -3,10 +3,9 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
-import { BsArrowUpRight, BsGithub, BsPlayCircleFill } from "react-icons/bs";
+import { BsGithub, BsPlayCircleFill } from "react-icons/bs";
 
 import {
   Tooltip,
@@ -17,7 +16,6 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderBtns from "@/components/WorkSliderBtns";
 
 const projects = [
   {
@@ -152,6 +150,7 @@ const Work = () => {
     //update project state based on current slide index
     setProject(projects[currentIndex]);
   }
+  
   return (
     <motion.section
       initial={{ opacity: 0 }}
