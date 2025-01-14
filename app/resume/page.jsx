@@ -99,7 +99,7 @@ const experience = {
       {
         company: "1UP Web Designs",
         position: "Web Development and Design",
-        duration: "March 2020 - Diciembre 2024",
+        duration: "March 2020 - Decembre 2024",
       },
       {
         company: "External Consultant",
