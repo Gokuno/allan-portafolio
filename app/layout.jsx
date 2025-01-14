@@ -1,5 +1,6 @@
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
+import { LanguageProvider } from "@/components/Header";
 
 //Components
 import Header from "@/components/Header"
@@ -22,9 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={robotoMono.variable}>
-        <Header />
-        <StairEffect />
-        <PageTransition>{children}</PageTransition>
+        <LanguageProvider>
+          <Header />
+          <StairEffect />
+          <PageTransition>{children}</PageTransition>
+        </LanguageProvider>
       </body>
     </html>
   );
