@@ -13,14 +13,14 @@ const Home = () => {
 
   const content = {
     es: {
-      title: "Desarrollador Web",
+      title: "Ingeniero en Software y Desarrollador Web",
       greeting: "Hola, soy",
       description: "Soy ingeniero especializado en el desarrollo de sitios, aplicaciones web y programacion.",
       resumeButton: "Descargar CV",
       resumeLink: "/assets/cv/Jorge Allan Paz ES.pdf",
     },
     en: {
-      title: "Web Developer",
+      title: "Software Engineer and Web Developer",
       greeting: "Hi, I am",
       description: "I am an engineer specializing in the development of websites, web applications, and programming.",
       resumeButton: "Download Resume",

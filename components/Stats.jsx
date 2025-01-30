@@ -7,15 +7,15 @@ import { LanguageContext } from "@/components/Header";
 const statsContent = {
     es: [
         { num: 10, text: "Años de Experiencia" },
-        { num: 67, text: "Proyectos Completados" },
+        { num: 68, text: "Proyectos Completados" },
         { num: 9, text: "Tecnologias Implementadas" },
-        { num: 500, text: "Contribuciones" },
+        { num: 650, text: "Contribuciones" },
     ],
     en: [
         { num: 10, text: "Years of Experience" },
-        { num: 67, text: "Projects Completed" },
+        { num: 68, text: "Projects Completed" },
         { num: 9, text: "Technologies Implemented" },
-        { num: 500, text: "Contributions" },
+        { num: 650, text: "Contributions" },
     ],
 };
 
