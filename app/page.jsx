@@ -17,7 +17,7 @@ const Home = () => {
       greeting: "Hola, soy",
       description: "Soy ingeniero especializado en el desarrollo de sitios, aplicaciones web y programacion.",
       resumeButton: "Descargar CV",
-      resumeLink: "/assets/cv/Jorge Allan Paz ES.pdf",
+      resumeLink: "/assets/cv/Jorge Allan Paz ES1.pdf",
     },
     en: {
       title: "Software Engineer and Web Developer",
