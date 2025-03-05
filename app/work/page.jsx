@@ -58,9 +58,9 @@ const projects = {
         { name: 'Vue.js' },
         { name: 'Tailwind.css' },
       ],
-      image: "/assets/work/gymapp.png",
+      image: "/assets/work/weather.png",
       live: 'https://thelocalweatherapplication.netlify.app',
-      github: 'https://github.com/Gokuno/gym-app',
+      github: 'https://github.com/Gokuno/vue-project',
     },
     {
       num: "4",
